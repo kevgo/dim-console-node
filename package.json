@@ -20,5 +20,8 @@
     "postpublish": "git push && git push --tags",
     "prepublish": "bin/build",
     "preversion": "bin/update-check"
+  },
+  "devDependencies": {
+    "david": "7.0.1"
   }
 }
