@@ -1,0 +1,19 @@
+{
+  "name": "dim-console",
+  "version": "1.0.0",
+  "description": "A console object that outputs its contents dimmed. For testing.",
+  "main": "dist/dim-console.js",
+  "scripts": {
+    "test": "bin/spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevgo/dim-console-node.git"
+  },
+  "author": "Kevin Goslar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kevgo/dim-console-node/issues"
+  },
+  "homepage": "https://github.com/kevgo/dim-console-node#readme"
+}
