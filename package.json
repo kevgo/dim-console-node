@@ -2,6 +2,9 @@
   "name": "dim-console",
   "version": "1.0.0",
   "author": "Kevin Goslar",
+  "dependencies": {
+    "chalk": "1.1.1"
+  },
   "description": "A console object that outputs its contents dimmed. For testing.",
   "homepage": "https://github.com/kevgo/dim-console-node",
   "license": "ISC",
