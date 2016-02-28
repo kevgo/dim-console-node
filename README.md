@@ -8,9 +8,16 @@
 Use this object anywhere you would use a normal console.
 
 
-## Update
+## Update dependencies
 
 ```
-npm version <patch|minor|major>
-npm publish
+$ update
+```
+
+
+## Publish
+
+```
+$ npm version <patch|minor|major>
+$ npm publish
 ```
