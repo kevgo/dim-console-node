@@ -10,7 +10,8 @@
     "chai": "3.5.0",
     "david": "7.0.1",
     "livescript": "1.4.0",
-    "mocha": "2.4.5"
+    "mocha": "2.4.5",
+    "o-tools": "0.1.4"
   },
   "files": [
     "dist"
@@ -23,9 +24,7 @@
     "url": "git+https://github.com/kevgo/dim-console-node.git"
   },
   "scripts": {
-    "postpublish": "git push && git push --tags",
     "prepublish": "bin/build",
-    "preversion": "bin/update-check",
     "test": "bin/spec"
   }
 }

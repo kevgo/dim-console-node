@@ -19,7 +19,6 @@
   so that it is distinguishable from other output.
 
 
-
 ## Usage
 
 ```javascript
@@ -36,6 +35,7 @@ dimConsole.output
 dimConsole.reset()
 ```
 
+
 ## Related projects
 
 * [capture-stream](https://github.com/doowb/capture-stream):
@@ -49,9 +49,8 @@ $ update
 ```
 
 
-## Publish
+## Release a new version
 
 ```
-$ npm version <patch|minor|major>
-$ npm publish
+$ publish <patch|minor|major>
 ```
