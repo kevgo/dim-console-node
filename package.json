@@ -6,6 +6,11 @@
     "chalk": "1.1.1"
   },
   "description": "A console object that outputs its contents dimmed. For testing.",
+  "devDependencies": {
+    "chai": "3.5.0",
+    "david": "7.0.1",
+    "mocha": "2.4.5"
+  },
   "files": [
     "dist"
   ],
@@ -19,11 +24,6 @@
   "scripts": {
     "postpublish": "git push && git push --tags",
     "prepublish": "bin/build",
-    "preversion": "bin/update-check"
-  },
-  "devDependencies": {
-    "chai": "3.5.0",
-    "david": "7.0.1",
-    "mocha": "2.4.5"
+    "preversion": "bin/update-check",
   }
 }
