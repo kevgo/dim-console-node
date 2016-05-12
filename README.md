@@ -1,15 +1,15 @@
-# Dim Console
+# Node.JS Dim Console
 
-> A Node.JS console object to be used for testing console output.
+> A console object for testing console output of libraries
+
+[![Circle CI](https://circleci.com/gh/kevgo/dim-console-node.svg?style=shield)](https://circleci.com/gh/kevgo/dim-console-node)
 
 * __Does not interfere with the built-in console:__
   You inject this library as a dependency into your code.
-  This is cleaner in larger code bases or test setups,
-  and ensures that you only captures the output of your library under test.
+  This is cleaner, and simpler in larger code bases or test setups.
+  It ensures that you only capture the output of your library under test.
   The output of other parts of the system -
-  like your test framework or other libraries - is not affected.
-  If you want to capture all console output,
-  use [capture-stream](https://github.com/doowb/capture-stream).
+  like your test framework, debuggers, tracers, or other libraries - is not affected.
 
 * __Captures the output to the console:__
   You can verify it against expected output.
@@ -35,6 +35,11 @@ dimConsole.output
 // reset the captured output
 dimConsole.reset()
 ```
+
+## Related projects
+
+* [capture-stream](https://github.com/doowb/capture-stream):
+  completely replaces Node's console for all code
 
 
 ## Update dependencies
