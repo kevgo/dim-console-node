@@ -4,5 +4,17 @@ require! {
 
 
 module.exports =
-  log: (text) -> console.log dim text.trim-right!
-  error: (text) -> console.log dim text.trim-right!
+
+  # Captures the cumulated output to stdout and stderr
+  output: ''
+
+  log: (text) ->
+    @output += "#{text}\n"
+    console.log dim text.trim-right!
+
+  error: (text) ->
+    @output += "#{text}\n"
+    console.log dim text.trim-right!
+
+  reset: ->
+    @output = ''
