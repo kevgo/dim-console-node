@@ -3453,6 +3453,11 @@
         }
       }
     },
+    "o-tools-livescript": {
+      "version": "1.0.2",
+      "from": "o-tools-livescript@1.0.2",
+      "resolved": "https://registry.npmjs.org/o-tools-livescript/-/o-tools-livescript-1.0.2.tgz"
+    },
     "optionator": {
       "version": "0.6.0",
       "from": "optionator@>=0.6.0 <0.7.0",
