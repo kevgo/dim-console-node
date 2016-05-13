@@ -3,18 +3,32 @@ require! {
 }
 
 
-module.exports =
+dim-output =
 
   # Captures the cumulated output to stdout and stderr
   output: ''
 
-  log: (text) ->
-    @output += "#{text}\n"
-    console.log dim text.trim-right!
+  console:
 
-  error: (text) ->
-    @output += "#{text}\n"
-    console.log dim text.trim-right!
+    log: (text) ->
+      dim-output.output += "#{text}\n"
+      console.log dim text.trim-right!
+
+    error: (text) ->
+      dim-output.output += "#{text}\n"
+      console.log dim text.trim-right!
+
+  process:
+
+    stdout:
+
+      write: (text) ->
+        dim-output.output += "#{text}"
+        process.stdout.write dim text.trim-right!
 
   reset: ->
-    @output = ''
+    dim-output.output = ''
+
+
+
+module.exports = dim-output
