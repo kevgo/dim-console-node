@@ -1,6 +1,6 @@
 {
   "name": "dim-console",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "author": "Kevin Goslar",
   "dependencies": {
     "chalk": "1.1.3"
