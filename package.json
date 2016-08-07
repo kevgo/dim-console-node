@@ -13,6 +13,7 @@
     "mocha": "2.5.3",
     "o-tools": "0.3.1",
     "o-tools-livescript": "1.0.3"
+    "tertestrial": "0.0.5"
   },
   "files": [
     "dist"

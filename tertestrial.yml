@@ -1,0 +1,6 @@
+actions:
+
+  - command: 'node_modules/o-tools-livescript/bin/build && mocha --compilers ls:livescript spec/**/*-spec.ls'
+
+  - filename: '\.ls$'
+    command: 'node_modules/o-tools-livescript/bin/build && mocha --compilers ls:livescript {{filename}}'
