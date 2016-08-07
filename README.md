@@ -3,6 +3,8 @@
 > A console object for testing console output of libraries
 
 [![Circle CI](https://circleci.com/gh/kevgo/dim-console-node.svg?style=shield)](https://circleci.com/gh/kevgo/dim-console-node)
+[![dependencies Status](https://david-dm.org/kevgo/dim-console-node/status.svg)](https://david-dm.org/kevgo/dim-console-node)
+[![devDependencies Status](https://david-dm.org/kevgo/dim-console-node/dev-status.svg)](https://david-dm.org/kevgo/dim-console-node?type=dev)
 
 * __Does not interfere with the built-in console:__
   You inject this library as a dependency into your code.
