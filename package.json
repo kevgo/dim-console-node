@@ -8,7 +8,7 @@
   "description": "A console object that outputs its contents dimmed. For testing.",
   "devDependencies": {
     "chai": "3.5.0",
-    "mocha": "2.5.3",
+    "mocha": "3.0.1",
     "o-tools": "0.4.18",
     "o-tools-livescript": "1.1.2",
     "tertestrial": "0.0.5"
