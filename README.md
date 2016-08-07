@@ -27,10 +27,19 @@
 const dimConsole = require('dim-console')
 
 // use the dim console in your test code somewhere
-// your code must understand and use the "console" parameter
-myMethodUnderTest({console: dimConsole})
+// your code must understand and use the respective parameters
+myMethodUnderTest({console: dimConsole.console})
+myMethodUnderTest({process: dimConsole.process})
+myMethodUnderTest({stdout: dimConsole.process.stdout})
+myMethodUnderTest({stderr: dimConsole.process.stderr})
 
-// get the output captured so far
+// get the stdout output captured so far
+dimConsole.stdoutOutput
+
+// get the stderr output captured so far
+dimConsole.stderrOutput
+
+// get the cumulated output (stdout + stderr) captured so far
 dimConsole.output
 
 // reset the captured output
