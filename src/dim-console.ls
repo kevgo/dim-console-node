@@ -1,5 +1,5 @@
 require! {
-  'chalk' : {dim, red}
+  'chalk' : {dim}
 }
 
 
@@ -25,7 +25,7 @@ dim-console =
     error: (text) ->
       dim-console.stderr-output += text
       dim-console.output += "#{text}\n"
-      console.log dim red text.trim-right!
+      console.log dim text.trim-right!
 
 
   process:
@@ -35,14 +35,14 @@ dim-console =
       write: (text) ->
         dim-console.stdout-output += text
         dim-console.output += text
-        process.stdout.write dim text.trim-right!
+        process.stdout.write dim text
 
     stderr:
 
       write: (text) ->
         dim-console.stderr-output += text
-        dim-console.output += "#{text}"
-        process.stderr.write dim red text.trim-right!
+        dim-console.output += text
+        process.stderr.write dim text
 
 
   reset: ->
