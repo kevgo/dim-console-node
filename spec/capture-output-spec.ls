@@ -20,7 +20,7 @@ describe 'capturing standard output', (...) ->
 
 
   it 'returns the captured standard output as stdout-output', ->
-    expect(dim-console.stdout-output).to.equal 'some standard outputsome process.stdout.write output'
+    expect(dim-console.stdout-output).to.equal 'some standard output\nsome process.stdout.write output'
 
 
 describe 'capturing stderr output', (...) ->
@@ -31,7 +31,7 @@ describe 'capturing stderr output', (...) ->
 
 
   it 'returns the captured error output as as stderr-output', ->
-    expect(dim-console.stderr-output).to.equal 'some error outputsome process.stderr.write output'
+    expect(dim-console.stderr-output).to.equal 'some error output\nsome process.stderr.write output'
 
 
 describe 'capturing cumulated output', (...) ->

@@ -18,13 +18,15 @@ dim-console =
   console:
 
     log: (text) ->
-      dim-console.stdout-output += text
-      dim-console.output += "#{text}\n"
+      text-with-newline = "#{text}\n"
+      dim-console.stdout-output += text-with-newline
+      dim-console.output += text-with-newline
       console.log dim text.trim-right!
 
     error: (text) ->
-      dim-console.stderr-output += text
-      dim-console.output += "#{text}\n"
+      text-with-newline = "#{text}\n"
+      dim-console.stderr-output += text-with-newline
+      dim-console.output += text-with-newline
       console.log dim text.trim-right!
 
 
